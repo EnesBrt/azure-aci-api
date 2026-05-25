@@ -1,0 +1,43 @@
+# Azure IaC local/generated artifacts
+.env
+.env.*
+*.env
+*.env.*
+!.env.example
+!*.env.example
+*.pem
+*.pfx
+*.key
+
+# Terraform/OpenTofu local state and provider cache
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Real variable files may contain secrets or environment-specific values
+*.tfvars
+*.tfvars.json
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Saved plans and machine-readable plan output are sensitive until reviewed/redacted
+tfplan
+tfplan.*
+*.tfplan
+*.tfplan.*
+plans/
+
+# Azure/Bicep generated and raw output artifacts
+*.what-if.json
+*.what-if.txt
+what-if*.json
+what-if*.txt
+/templates/bicep/main.json
+
+# Audit notes are okay only after redaction; raw logs are not
+*.raw.log
+*.raw.json

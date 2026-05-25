@@ -1,0 +1,11 @@
+subscription_id = "00000000-0000-0000-0000-000000000000"
+tenant_id       = null
+location        = "westeurope"
+project_name    = "example-project"
+environment     = "dev"
+
+tags = {
+  project     = "example-project"
+  environment = "dev"
+  managedBy   = "hermes-azure-iac-agent"
+}

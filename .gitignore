@@ -1,0 +1,40 @@
+# Local/editor/tool caches
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Azure IaC local/generated artifacts
+.env
+*.pem
+*.pfx
+*.key
+
+# Terraform/OpenTofu local state and provider cache
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Real variable files may contain secrets or environment-specific values
+terraform.tfvars
+*.auto.tfvars
+
+# Saved plans and machine-readable plan output are sensitive until reviewed/redacted
+tfplan
+tfplan.*
+plans/
+
+# Azure/Bicep generated and raw output artifacts
+*.what-if.json
+*.what-if.txt
+what-if*.json
+what-if*.txt
+main.json
+
+# Audit notes are okay only after redaction; raw logs are not
+*.raw.log
+*.raw.json
